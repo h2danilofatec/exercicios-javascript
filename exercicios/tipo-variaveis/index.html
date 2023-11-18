@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Script</title>
+</head>
+<body>
+    <script>
+      //string
+        let nome = "Joao";
+        console.log(typeof nome);
+
+      //number
+      let numero1 = 1;
+      let numero2 = 1.5;
+
+      console.log(numero1);
+      console.log(numero2);
+
+      //boolean
+      let existe = true
+      console.log(typeof existe);
+
+      //let
+      //var 
+      
+      //const
+        const CORES_PRIMARIAS = ["red", "green", "blue"];
+
+        pi = 5
+        console.log(pi);
+
+        const calcularArea = (raio) => {
+            const pi = 3.14;
+            return pi * raio * raio;
+        }
+
+
+        console.log(calcularArea(5));
+
+      //obj
+      //arrays
+
+
+      /* function minhaFuncao() {
+        
+        if (true) {
+            let x = 10;
+        }
+
+        console.log(x);
+      }
+
+      console.log(minhaFuncao()); */
+
+
+      let pessoa = {
+        nome: "Danilo",
+        idade: 36,
+        casado: true
+      }
+
+      let github = {
+        repositorio: [
+            {
+                nome: "portifolio",
+                link: "wwww.teste1.com.br"
+            },
+            {
+                nome: "portifolio2",
+                link: "wwww.teste2.com.br"
+            },
+            {
+                nome: "portifolio3",
+                link: "wwww.teste3.com.br"
+            },
+            {
+                nome: "portifolio4",
+                link: "wwww.teste4.com.br"
+            }
+        ]
+      };
+      
+      function listarRepositorios() {
+        for (let i = 0; i < github.repositorio.length; i++) {
+            console.log(github.repositorio[i].nome + " - " + github.repositorio[i].link)
+            
+        }
+      }
+
+      listarRepositorios();
+
+      var frutas = ["maca", "banana", "laranja"];
+
+      function listarFrutas() {
+        for (let i = 0; i < frutas.length; i++) {
+            console.log(frutas[i])
+            
+        }
+      }
+
+
+      listarFrutas();
+      //console.log(pessoa);
+
+
+    </script>
+</body>
+</html>
